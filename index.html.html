@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Whisper&display=swap');
+        
+:root{
+    --color1:#00B5EB;
+    --color2:#2595B8;
+    --color3:#357285;
+    --color4:#314A52;
+    --color5:#293133;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+header{
+    background-image: linear-gradient(to bottom,  var(--color3),var(--color1));
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 8px;
+    color: white;
+    
+}
+
+header>h1{
+    font-size: 3em;
+    text-align: center;
+    margin: 0px 10px -48px 10px;
+    padding-bottom: 45px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.212);
+}
+header>p{
+    
+    font-size: 30px;
+    font-family: 'Whisper', cursive;
+    text-align: center;
+    text-decoration: dotted;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.39);
+}
+
+
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:var(--color5);
+    margin: 0px;
+}
+
+main{
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px 10px;
+    box-shadow: -2px 2px 2px 2px rgba(0, 0, 0, 0.37);
+    min-width: 320px;
+    max-width: 1070px;
+    margin: auto;
+}
+
+main h1{
+    color: var(--color2);
+    font-size: 2em;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--color1), whitesmoke);
+    color:  var(--color4);
+    text-indent: 8px;
+    font-size: 1.5em;
+}
+
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0px;
+    text-indent: 20px;
+    line-height: 2em;
+    font-weight: normal;
+}
+
+article{
+    text-align: justify;
+    padding: 5px;   
+    border-radius: 4px;
+}
+
+article>aside{
+    margin-top: 5px;    
+    text-align: right;
+}
+
+article>h2{
+    margin-bottom: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+nav{
+    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.363);
+    background-color: var(--color3);
+    padding: 6px;
+    border-radius: 4px;  
+ }
+
+nav>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 3px 3px 3px 3px;
+    width: 100%;
+    transition-duration: .3s;
+}
+
+nav>a:hover{
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
+#assuntos{
+    margin: 10px 0px;
+}
+
+
+#borda{
+    border: 20px solid transparent;
+    padding: 10px;
+    /*border-image-source: url('borda.png');
+    border-image-slice: 26;
+    border-image-repeat: repeat;*/
+    border-image: url('borda.png') 26 repeat;
+}
+
+#videos{
+
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+#divideos{
+    background-image: linear-gradient(to bottom, var(--color1), var(--color4));
+    margin: 0px -15px 30px -px;
+    padding: 10px 0px 10px 0px;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color2);
+    color: whitesmoke;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+footer>p{
+    margin: 10px 0px 0px 0px;
+    padding-top: 10px;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>MUAMBEIRO</h1>
+        <p> conectando pessoas alem das fronteiras</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+           
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <article>
+                <h1>esportes politica e tecnologia</h1>
+            </article>
+        </section>
+                
+        <section id="noticias">
+            <article>
+                <h2>noticia sobre tecnologia</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium impedit optio porro. Repudiandae nulla illo necessitatibus. Soluta minima officiis aperiam nam quis, excepturi at totam unde, obcaecati itaque est deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum accusamus ullam iusto voluptatum adipisci cum, totam at inventore, accusantium maxime quis voluptas veniam rem eum aperiam itaque odio recusandae amet.</p>
+                <aside> artigo desenvolvido por webnaldo</aside>
+            </article>
+        </section>
+
+        <section id="fotos">
+            <article>
+                <h2> foto qualquer que tem que ser responsiva</h2>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="6440497e9c8b96d20dafd1a564fbee4d.jpg">
+                    <img src="6440497e9c8b96d20dafd1a564fbee4d.jpg" alt="imagem qualquer">
+                </picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eligendi reprehenderit provident nihil ex voluptatum. Nesciunt ullam error laboriosam quisquam, perspiciatis odit amet vitae. Dicta nobis numquam doloremque a deleniti 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda saepe recusandae, nulla optio atque fugiat eaque doloribus neque consectetur, similique, maiores a molestiae. Neque facilis ducimus dicta laudantium quisquam. Nihil?
+                </p>
+                <aside> artigo desenvolvido por webnaldo</aside>
+            </article>
+        </section>
+
+        <section id="video" >
+            <article>
+    
+                <h2>videos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolores natus sed nam quae amet provident similique impedit debitis ipsum nulla optio, placeat expedita repellendus sequi corrupti dolore cumque saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum laudantium dignissimos nostrum deleniti, animi, adipisci vel nesciunt ea quam ratione assumenda minus tempore? Itaque vero assumenda omnis quo unde!</p>
+    
+                    <div id="divideos">
+                        <iframe id="videos" width="560" height="315" src="https://www.youtube.com/embed/hCaQbLKqAlQ?si=5FiTe8NGRX8jBBDR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusantium, quas omnis ea dolorum iusto delectus nesciunt odit doloremque cupiditate. Consectetur, veritatis. Tempora vel consectetur ducimus libero. Nihil, placeat esse?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error nisi, quo illum ratione itaque expedita ullam consequuntur veritatis minima quibusdam molestiae, veniam distinctio debitis, dolor sunt soluta harum! Debitis, tenetur?
+                </p>
+                <aside> artigo desenvolvido por webnaldo</aside>
+            </article>
+        </section>
+    
+      <h1 id="borda">teste de borda</h1>
+      
+    </main>
+
+    <footer>
+        <p>desenvolvido por thiago</p>
+    </footer>
+    
+</body>
+</html>
